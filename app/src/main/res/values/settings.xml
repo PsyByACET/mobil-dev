@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">laba4</string>
+    <string name="title">Питсы</string>
+    <string name="name">Пицца пепперони</string>
+    <string name="prices">500</string>
+    <string name="text">
+       Пикантная пепперони, увеличенная порция моцареллы, томатный соус
+    </string>
+    <string name="menu_account">Account</string>
+</resources>
