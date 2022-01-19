@@ -9,7 +9,7 @@ import kotlinx.coroutines.launch
 
 class NodeViewModel(application: Application): AndroidViewModel(application) {
 
-    private val readAlldata: LiveData<List<Node>>
+    val readAlldata: LiveData<List<Node>>
     private val repository: NodeRepository
 
     init {

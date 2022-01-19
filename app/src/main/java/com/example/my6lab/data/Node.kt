@@ -9,5 +9,5 @@ import androidx.room.PrimaryKey
 data class Node (
     @PrimaryKey
     val value: Int,
-    var nodes: MutableList<Node>
+    var nodes: List<Node>
 )
