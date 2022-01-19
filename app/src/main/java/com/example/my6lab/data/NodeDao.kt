@@ -13,7 +13,7 @@ interface NodeDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun addNode(node: Node)
 
-    @Query("SELECT * FROM node_table ORDER BY id ASC")
+    @Query("SELECT * FROM node_table ORDER BY value ASC")
     fun readAllData(): LiveData<List<Node>>
 
 

@@ -7,7 +7,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.room.TypeConverters
 import com.example.my6lab.R
 import com.example.my6lab.data.Node
@@ -32,17 +34,26 @@ class AddFragment : Fragment() {
         mNodeViewModel = ViewModelProvider(this).get(NodeViewModel::class.java)
 
         view.add_button.setOnClickListener{
-            insertDataToDatabase()
+            val nodeValueToAdd = editTextNumber.text.toString().toInt()
+            insertDataToDatabase(mNodeViewModel,nodeValueToAdd,mutableListOf())
         }
         return view
     }
 
-    private fun insertDataToDatabase() {
-        val value = editTextNumber.text
+//    private fun insertDataToDatabase() {
+//        val value = editTextNumber.text
+//
+//        if(inputCheck(value)){
+//            //val node = Node(0, Integer.parseInt(value.toString()), String)
+//        }
+//    }
+    private fun insertDataToDatabase(viewModel: NodeViewModel, value: Int, listNode: MutableList<Node>) {
+        val nodeSave = Node(value, listNode)
+        viewModel.addNode(nodeSave)
 
-        if(inputCheck(value)){
-            //val node = Node(0, Integer.parseInt(value.toString()), String)
-        }
+        Toast.makeText(requireContext(), "Успешно добавлено", Toast.LENGTH_LONG).show()
+
+        findNavController().navigate(R.id.action_addFragment_to_listFragment)
     }
 
     private fun inputCheck(value: Editable): Boolean {

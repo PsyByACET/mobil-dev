@@ -1,10 +1,11 @@
 package com.example.my6lab.data
 
-import androidx.lifecycle.LiveData
+import com.example.my6lab.data.Node
+import com.example.my6lab.data.NodeDao
 
 class NodeRepository(private val nodeDao: NodeDao) {
 
-    val readAllData: LiveData<List<Node>> = nodeDao.readAllData()
+    val readAllData = nodeDao.readAllData()
 
     suspend fun addNode(node: Node){
         nodeDao.addNode(node)
