@@ -1,4 +1,4 @@
-package com.example.my6lab.data.models
+package com.example.my6lab.data
 
 import android.os.Parcelable
 import androidx.room.Entity

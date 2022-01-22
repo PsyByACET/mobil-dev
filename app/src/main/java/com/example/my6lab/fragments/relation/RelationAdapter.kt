@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.my6lab.R
-import com.example.my6lab.data.models.Node
+import com.example.my6lab.data.Node
 import com.example.my6lab.fragments.dialog.AddRelationFragment
 import com.example.my6lab.fragments.dialog.DeleteRelationFragment
 import kotlinx.android.synthetic.main.relation_row.view.*
@@ -56,8 +56,6 @@ class RelationAdapter(myElement: Node, statusBool: Boolean, frag: FragmentManage
         val currentItem = nodeList[position]
         holder.itemView.id_value.text = firstEl.toString()
         holder.itemView.textView2.text = currentItem.value.toString()
-        holder.itemView.textView.text = status.toString()
-
 
         if ((checkRelationNode(firstNode, currentItem, false) && status) || (checkRelationNode(currentItem, firstNode, false) && !status)){
 

@@ -1,7 +1,6 @@
 package com.example.my6lab.data
 
 import androidx.room.TypeConverter
-import com.example.my6lab.data.models.Node
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 

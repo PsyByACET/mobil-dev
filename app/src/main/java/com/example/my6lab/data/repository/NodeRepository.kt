@@ -1,7 +1,7 @@
 package com.example.my6lab.data.repository
 
 import com.example.my6lab.data.NodeDao
-import com.example.my6lab.data.models.Node
+import com.example.my6lab.data.Node
 
 class NodeRepository(private val nodeDao: NodeDao) {
 

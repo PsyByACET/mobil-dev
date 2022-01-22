@@ -6,7 +6,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
 import com.example.my6lab.data.NodeDatabase
 import com.example.my6lab.data.repository.NodeRepository
-import com.example.my6lab.data.models.Node
+import com.example.my6lab.data.Node
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

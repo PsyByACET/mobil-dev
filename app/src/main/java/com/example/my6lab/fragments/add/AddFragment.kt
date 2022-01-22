@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.room.TypeConverters
 import com.example.my6lab.R
-import com.example.my6lab.data.models.Node
+import com.example.my6lab.data.Node
 import com.example.my6lab.data.NodeConverter
 import com.example.my6lab.data.viewModel.NodeViewModel
 import kotlinx.android.synthetic.main.fragment_add.*
