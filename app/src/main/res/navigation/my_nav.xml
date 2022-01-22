@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="com.example.my6lab.fragments.list.ListFragment"
-        android:label="fragment_list"
+        android:label="Список Нодов"
         tools:layout="@layout/fragment_list" >
         <action
             android:id="@+id/action_listFragment_to_addFragment"
@@ -20,7 +20,7 @@
     <fragment
         android:id="@+id/addFragment"
         android:name="com.example.my6lab.fragments.add.AddFragment"
-        android:label="fragment_add"
+        android:label="Добавить фрагмент"
         tools:layout="@layout/fragment_add" >
         <action
             android:id="@+id/action_addFragment_to_listFragment"
@@ -29,7 +29,7 @@
     <fragment
         android:id="@+id/relationFragment"
         android:name="com.example.my6lab.fragments.relation.RelationFragment"
-        android:label="Relation"
+        android:label="Связи"
         tools:layout="@layout/fragment_relation" >
         <action
             android:id="@+id/action_relationFragment_to_listFragment"
