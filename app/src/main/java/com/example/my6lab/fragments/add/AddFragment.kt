@@ -39,14 +39,7 @@ class AddFragment : Fragment() {
         }
         return view
     }
-
-//    private fun insertDataToDatabase() {
-//        val value = editTextNumber.text
-//
-//        if(inputCheck(value)){
-//            //val node = Node(0, Integer.parseInt(value.toString()), String)
-//        }
-//    }
+    
     private fun insertDataToDatabase(viewModel: NodeViewModel, value: Int, listNode: MutableList<Node>) {
         val nodeSave = Node(value, listNode)
         viewModel.addNode(nodeSave)

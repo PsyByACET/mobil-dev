@@ -59,14 +59,8 @@ class RelationAdapter(myElement: Node, statusBool: Boolean, frag: FragmentManage
         holder.itemView.textView.text = status.toString()
 
 
-//        holder.itemView.setOnClickListener{
-//            Toast.makeText(holder.itemView.context, "pos #${position + 1}", Toast.LENGTH_SHORT).show()
-//            holder.itemView.setBackgroundColor(0xFF0FFF0F.toInt())
-//        }
-
         if ((checkRelationNode(firstNode, currentItem, false) && status) || (checkRelationNode(currentItem, firstNode, false) && !status)){
 
-//            val textView = TextView(context)
 
             //If connection exists make it green and add listener
             if ((checkRelationNode(currentItem, firstNode, true) && status) || (checkRelationNode(firstNode, currentItem, true) && !status)){
@@ -85,13 +79,11 @@ class RelationAdapter(myElement: Node, statusBool: Boolean, frag: FragmentManage
                     var dialogAdd = AddRelationFragment(firstNode, currentItem, status)
                     dialogAdd.show(fragmentM, "tag")
 
-                    Toast.makeText(holder.itemView.context, "testtttt #${status.toString()}", Toast.LENGTH_SHORT).show()
+
                 }
             }
 
         }
-
-
 
     }
     // set data and filter (delete duplicate, examole 9 --- 9)
