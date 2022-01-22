@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.my6lab.R
-import com.example.my6lab.data.Node
+import com.example.my6lab.data.models.Node
 import com.example.my6lab.fragments.dialog.AddRelationFragment
 import com.example.my6lab.fragments.dialog.DeleteRelationFragment
 import kotlinx.android.synthetic.main.relation_row.view.*

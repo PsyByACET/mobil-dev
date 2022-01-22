@@ -1,9 +1,12 @@
-package com.example.my6lab.data
+package com.example.my6lab.data.viewModel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
+import com.example.my6lab.data.NodeDatabase
+import com.example.my6lab.data.repository.NodeRepository
+import com.example.my6lab.data.models.Node
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.my6lab.R
-import com.example.my6lab.data.NodeViewModel
+import com.example.my6lab.data.viewModel.NodeViewModel
 import kotlinx.android.synthetic.main.fragment_list.view.*
 
 

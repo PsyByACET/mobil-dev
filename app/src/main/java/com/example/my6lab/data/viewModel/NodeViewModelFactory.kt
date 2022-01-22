@@ -1,4 +1,4 @@
-package com.example.my6lab.data
+package com.example.my6lab.data.viewModel
 
 import android.app.Application
 import androidx.lifecycle.ViewModel

@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.my6lab.R
-import com.example.my6lab.data.Node
-import com.example.my6lab.data.NodeViewModel
+import com.example.my6lab.data.models.Node
+import com.example.my6lab.data.viewModel.NodeViewModel
 import kotlinx.android.synthetic.main.add_dialog.view.*
 
 class AddRelationFragment(private var leftNode: Node, private var rightNode: Node, private var statusBool: Boolean)
