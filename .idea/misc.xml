@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/alexey/AndroidStudioProjects/My6Lab/app/src/main/res/drawable/ic_add.xml" value="0.22291666666666668" />
         <entry key="..\:/Users/alexey/AndroidStudioProjects/My6Lab/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/alexey/AndroidStudioProjects/My6Lab/app/src/main/res/layout/add_dialog.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/alexey/AndroidStudioProjects/My6Lab/app/src/main/res/layout/custom_row.xml" value="0.5" />
+        <entry key="..\:/Users/alexey/AndroidStudioProjects/My6Lab/app/src/main/res/layout/delete_dialog.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/alexey/AndroidStudioProjects/My6Lab/app/src/main/res/layout/fragment_add.xml" value="0.33" />
         <entry key="..\:/Users/alexey/AndroidStudioProjects/My6Lab/app/src/main/res/layout/fragment_list.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/alexey/AndroidStudioProjects/My6Lab/app/src/main/res/layout/fragment_relation.xml" value="0.33" />
+        <entry key="..\:/Users/alexey/AndroidStudioProjects/My6Lab/app/src/main/res/layout/relation_row.xml" value="0.5" />
       </map>
     </option>
   </component>

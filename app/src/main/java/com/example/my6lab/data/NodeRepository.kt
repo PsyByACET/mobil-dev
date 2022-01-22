@@ -10,4 +10,8 @@ class NodeRepository(private val nodeDao: NodeDao) {
     suspend fun addNode(node: Node){
         nodeDao.addNode(node)
     }
+
+    suspend fun updateNode(value: Int, nodes: MutableList<Node>){
+        nodeDao.updateNode(value, nodes)
+    }
 }

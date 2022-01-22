@@ -14,7 +14,9 @@ interface NodeDao {
     fun addNode(node: Node)
 
     @Query("SELECT * FROM node_table ORDER BY value ASC")
-    fun readAllData(): LiveData<List<Node>>
+    fun readAllData(): LiveData<MutableList<Node>>
 
+    @Query("UPDATE node_table SET nodes=:nodes WHERE value=:value")
+    suspend fun updateNode(value: Int, nodes: MutableList<Node>)
 
 }

@@ -9,7 +9,7 @@ import kotlinx.coroutines.launch
 
 class NodeViewModel(application: Application): AndroidViewModel(application) {
 
-    val readAlldata: LiveData<List<Node>>
+    val readAlldata: LiveData<MutableList<Node>>
     private val repository: NodeRepository
 
     init {
@@ -21,6 +21,11 @@ class NodeViewModel(application: Application): AndroidViewModel(application) {
     fun addNode(node: Node){
         viewModelScope.launch(Dispatchers.IO) {
             repository.addNode(node)
+        }
+    }
+    fun updateNode(value: Int, nodes: MutableList<Node>){
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.updateNode(value, nodes)
         }
     }
 }
