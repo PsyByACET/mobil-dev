@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginBottom="45dp"
-        android:text="Children"
+        android:text="Родитель"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" />
 
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="15dp"
         android:layout_marginBottom="45dp"
-        android:text="Parent"
+        android:text="Ребёнок"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
